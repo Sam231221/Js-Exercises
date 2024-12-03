@@ -1,4 +1,8 @@
-### **Numbers Exercises**
+## Js Exercises
+
+<details>
+<summary><b>Ex-1: Numbers</b>
+</summary>
 
 1. **Addition and Subtraction**
 
@@ -81,6 +85,7 @@
     - Convert a number into its word representation (e.g., `123` becomes "One Hundred Twenty-Three").
 
 20. **Decimal Precision Handling**
+
     - Write a program that performs operations on floating-point numbers (e.g., `0.1 + 0.2`) and resolves precision errors.
 
 ---
@@ -104,9 +109,15 @@
     - Write a function to check if a number is a magic number. A number is magic if the sum of its digits repeatedly equals `1` (e.g., `19 → 1+9 = 10 → 1+0 = 1`).
 
 25. **Custom Calculator**
+
     - Create a simple calculator using JavaScript that can handle addition, subtraction, multiplication, division, modulus, and exponentiation.
 
-### **String Exercises**
+</details>
+
+<details>
+<summary><b>Ex-2: Strings</b>
+</summary>
+<br>
 
 1. **Basic String Operations**
 
@@ -150,9 +161,12 @@
 10. **Character Frequency**
     - Find the most frequent character in a string.
 
----
+</details>
 
-### **Array Exercises**
+<details>
+<summary><b>Ex-3: Arrays</b>
+</summary>
+<br>
 
 1. **Basic Operations**
 
@@ -195,9 +209,12 @@
 10. **Rotate an Array**
     - Rotate an array by `n` positions (left or right).
 
----
+</details>
 
-### **Object Exercises**
+<details>
+<summary><b>Ex-4: Objects</b>
+</summary>
+<br>
 
 1. **Create and Access**
 
@@ -239,9 +256,11 @@
 10. **Group By Property**
     - Group an array of objects by a specific property.
 
----
+</details>
 
-### **Date Exercises**
+<details>
+<summary><b>Ex-5: Date and Math</b>
+</summary>
 
 1. **Current Date and Time**
 
@@ -339,4 +358,320 @@
   3. **Custom Date Formatter**
      - Create a function that formats a date object into various formats like `DD/MM/YYYY`, `Month DD, YYYY`, etc.
 
-Would you like me to provide solutions or additional exercises for any specific topic?
+</details>
+
+<details>
+<summary> 
+<b>Ex-6: Async Js + Es6 features</b>
+</summary>
+
+1. **Basic Promises**
+
+- Write a function `fetchData()` that returns a promise.
+- The promise should resolve with the string `"Data fetched successfully!"` after 2 seconds.
+- Use `.then()` to log the resolved value to the console.
+
+2. **Error Handling in Promises**
+
+- Extend the `fetchData()` function from the previous exercise to randomly reject with an error `"Failed to fetch data"`.
+- Handle both success and error cases using `.then()` and `.catch()`.
+
+3. **Async/Await Basics**
+
+- Rewrite the `fetchData()` function using `async` and `await`.
+- Call the function and log the result. Handle errors with a `try...catch` block.
+
+4. **Chaining Promises**
+
+- Create three functions that return promises:
+  1. `getUser()` resolves to `{ name: "Alice", id: 1 }` after 1 second.
+  2. `getPosts(userId)` resolves to `["Post 1", "Post 2"]` for a user ID after 1 second.
+  3. `getPostDetails(post)` resolves to `"Details of Post 1"` for the first post after 1 second.
+- Chain these promises to get the post details of the first post for the user.
+
+5. **Simulating API Calls**
+
+- Write a function `simulateAPI(url)` that:
+  - Resolves with the message `"API response from [url]"` after 3 seconds.
+  - Use this function to fetch data from 3 different URLs (`"/users"`, `"/posts"`, `"/comments"`) in parallel using `Promise.all`.
+
+---
+
+### **ES6+ Features Exercises**
+
+1. **Template Literals**
+
+- Create a function `greet(name, age)` that uses template literals to return a string:
+  - `"Hello, my name is [name] and I am [age] years old."`
+- Test the function with different inputs.
+
+2. **Destructuring**
+
+- Given the object:
+  ```js
+  const person = { name: "John", age: 30, job: "Developer" };
+  ```
+  - Use destructuring to extract `name` and `job` into variables.
+  - Log them to the console.
+
+3. **Arrow Functions**
+
+- Convert the following function into an arrow function:
+  ```js
+  function multiply(a, b) {
+    return a * b;
+  }
+  ```
+
+4. **Default Parameters**
+
+- Write a function `calculateArea(length = 10, width = 5)` that calculates the area of a rectangle. Test it by calling it with:
+  - No arguments.
+  - Only one argument.
+  - Both arguments.
+
+5. **Spread and Rest Operators**
+
+- Write a function `sumAll(...numbers)` that takes an unknown number of arguments and returns their sum.
+- Use the spread operator to call this function with an array `[1, 2, 3, 4, 5]`.
+
+6. **Classes**
+
+- Create a `Person` class with properties `name` and `age` and a method `introduce()` that logs:
+  - `"Hi, I'm [name] and I'm [age] years old."`
+- Create an instance of the class and call the method.
+
+7. **Map and Filter**
+
+- Given the array:
+  ```js
+  const numbers = [1, 2, 3, 4, 5, 6];
+  ```
+  - Use `map` to create a new array with each number doubled.
+  - Use `filter` to create a new array with only even numbers.
+
+8. **Set and WeakSet**
+
+- Create a `Set` of unique numbers from an array `[1, 2, 2, 3, 4, 4, 5]`.
+- Log the size of the set and verify it contains the number `3`.
+
+9. **Modules**
+
+- Write two JavaScript files:
+  1. `mathUtils.js`:
+     ```js
+     export function add(a, b) {
+       return a + b;
+     }
+     export function subtract(a, b) {
+       return a - b;
+     }
+     ```
+  2. `main.js`:
+     - Import the functions from `mathUtils.js` and use them.
+
+10. **Object Shorthand**
+
+- Write an object with the properties `name`, `age`, and `job` where the values come from existing variables. Use the object shorthand syntax.
+
+</details>
+
+<details>
+<summary>
+<b>
+Ex-7:Dom-Manipulation
+</b>
+</summary>
+
+#### **Basic DOM Manipulation Exercises**
+
+1. **Selecting Elements**
+
+- Write a script to:
+  - Select an element with the ID `header` and log it to the console.
+  - Select all elements with the class `item` and log the resulting NodeList to the console.
+  - Select all `<p>` tags and log their count.
+
+2. **Changing Text Content**
+
+- Create an HTML structure:
+  ```html
+  <h1 id="title">Old Title</h1>
+  <button id="changeTitle">Change Title</button>
+  ```
+- Write JavaScript to:
+  - Change the text content of the `<h1>` element to `"New Title"` when the button is clicked.
+
+3. **Adding and Removing Classes**
+
+- Use the following HTML:
+  ```html
+  <div id="box" class="red"></div>
+  <button id="toggleColor">Toggle Color</button>
+  ```
+- Write a script that toggles a `blue` class on the `<div>` when the button is clicked.
+
+#### 4. **Creating and Appending Elements**
+
+- Create an HTML file with an empty `<ul>`:
+  ```html
+  <ul id="list"></ul>
+  <button id="addItem">Add Item</button>
+  ```
+- Write JavaScript to:
+  - Add a new `<li>` with the text `"Item X"` (where X is the current number of items + 1) to the list whenever the button is clicked.
+
+#### 5. **Event Listeners**
+
+- Use the following HTML:
+  ```html
+  <button id="alertButton">Click Me!</button>
+  ```
+- Write JavaScript to:
+  - Show an alert with the text `"Button clicked!"` when the button is clicked.
+
+---
+
+### **Intermediate DOM Manipulation Exercises**
+
+6. **Form Handling**
+
+- Use this HTML:
+  ```html
+  <form id="myForm">
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button type="submit">Submit</button>
+  </form>
+  <p id="greeting"></p>
+  ```
+- Write JavaScript to:
+  - Prevent the form's default submission behavior.
+  - Display the text `"Hello, [Name]!"` in the `<p>` when the form is submitted, using the value from the input field.
+
+7. **Dynamic Styles**
+
+- Use this HTML:
+  ```html
+  <div id="box" style="width: 100px; height: 100px; background: red;"></div>
+  <button id="resize">Resize Box</button>
+  ```
+- Write JavaScript to:
+  - Increase the size of the `<div>` (both width and height by 20px) each time the button is clicked.
+
+8. **Removing Elements**
+
+- Use this HTML:
+  ```html
+  <ul id="todoList">
+    <li>Task 1 <button class="remove">Remove</button></li>
+    <li>Task 2 <button class="remove">Remove</button></li>
+    <li>Task 3 <button class="remove">Remove</button></li>
+  </ul>
+  ```
+- Write JavaScript to:
+  - Remove the parent `<li>` element when a "Remove" button is clicked.
+
+9. **Building a Counter**
+
+- Use this HTML:
+  ```html
+  <button id="decrement">-</button>
+  <span id="counter">0</span>
+  <button id="increment">+</button>
+  ```
+- Write JavaScript to:
+  - Increment the counter by 1 when the `+` button is clicked.
+  - Decrement the counter by 1 when the `-` button is clicked.
+
+10. **Manipulating Attributes**
+
+- Use this HTML:
+  ```html
+  <img id="image" src="image1.jpg" alt="First Image" />
+  <button id="changeImage">Change Image</button>
+  ```
+- Write JavaScript to:
+  - Change the `src` attribute of the `<img>` to `"image2.jpg"` when the button is clicked.
+
+---
+
+#### **Advanced DOM Manipulation Exercises**
+
+11. **Building a To-Do List**
+
+- Use this HTML:
+  ```html
+  <input type="text" id="taskInput" placeholder="Add a task" />
+  <button id="addTask">Add Task</button>
+  <ul id="taskList"></ul>
+  ```
+- Write JavaScript to:
+  - Add tasks entered into the input field as `<li>` elements when the button is clicked.
+  - Add a "Remove" button next to each task that deletes the task when clicked.
+
+12. **Accordion Component**
+
+- Use this HTML:
+  ```html
+  <div class="accordion">
+    <div class="accordion-item">
+      <h3 class="accordion-header">Header 1</h3>
+      <div class="accordion-body">Content 1</div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">Header 2</h3>
+      <div class="accordion-body">Content 2</div>
+    </div>
+  </div>
+  ```
+- Write JavaScript to:
+  - Toggle the visibility of the `accordion-body` when the corresponding `accordion-header` is clicked.
+
+13. **Live Search**
+
+- Use this HTML:
+  ```html
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <ul id="list">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Date</li>
+  </ul>
+  ```
+- Write JavaScript to:
+  - Filter the `<li>` elements to only show those that contain the text typed into the input field.
+
+14. **Dragging and Dropping**
+
+- Use this HTML:
+  ```html
+  <div
+    id="dragBox"
+    draggable="true"
+    style="width: 100px; height: 100px; background: blue;"
+  ></div>
+  <div
+    id="dropZone"
+    style="width: 200px; height: 200px; border: 2px dashed black;"
+  ></div>
+  ```
+- Write JavaScript to:
+  - Allow the blue box to be dragged and dropped into the drop zone.
+
+15. **Building a Slider**
+
+- Use this HTML:
+  ```html
+  <div id="slider">
+    <button id="prev">Previous</button>
+    <img id="sliderImage" src="image1.jpg" alt="Slider" />
+    <button id="next">Next</button>
+  </div>
+  ```
+- Write JavaScript to:
+  - Rotate through a list of image URLs (`["image1.jpg", "image2.jpg", "image3.jpg"]`) when the "Previous" or "Next" button is clicked.
+
+---
+
+</details>
